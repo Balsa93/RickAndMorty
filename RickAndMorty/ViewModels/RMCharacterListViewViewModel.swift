@@ -5,6 +5,7 @@
 //  Created by Balsa Komnenovic on 9.1.23..
 //
 
+//MARK: - Example if ViewModel is the delegate
 import UIKit
 
 protocol RMCharacterListViewViewModelDelegate: AnyObject {
