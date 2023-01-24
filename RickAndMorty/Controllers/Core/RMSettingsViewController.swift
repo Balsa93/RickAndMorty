@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import StoreKit
 import SwiftUI
 import SafariServices
 
@@ -44,12 +45,14 @@ final class RMSettingsViewController: UIViewController {
     private func handleTap(option: RMSettingsOption) {
         guard Thread.current.isMainThread else { return }
         if let url = option.targetUrl {
-//            Open website
+            //            Open website
             let vc = SFSafariViewController(url: url)
             present(vc, animated: true)
         } else if option == .rateApp {
-//            Show rating prompt
-            
+            //            Show rating prompt
+            if let windowScene = self.view.window?.windowScene {
+                SKStoreReviewController.requestReview(in: windowScene)
+            }
         }
     }
 }
