@@ -26,6 +26,7 @@ final class RMSettingsViewController: UIViewController {
                 self?.handleTap(option: option)
             }
         }))))
+        
         addChild(settingsSwiftUIController)
         settingsSwiftUIController.didMove(toParent: self)
         view.addSubview(settingsSwiftUIController.view)
