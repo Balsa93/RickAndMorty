@@ -8,7 +8,7 @@
 import UIKit
 
 protocol RMLocationViewDelegate: AnyObject {
-    func rmLocationViewDelegate(_ locationView: RMLocationView, didSelectLocation: RMLocation)
+    func rmLocationViewDelegate(_ locationView: RMLocationView, didSelect location: RMLocation)
 }
 
 class RMLocationView: UIView {
@@ -86,7 +86,7 @@ extension RMLocationView: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         guard let locationModel = viewModel?.location(at: indexPath.row) else { return }
-        self.delegate?.rmLocationViewDelegate(self, didSelectLocation: locationModel)
+        self.delegate?.rmLocationViewDelegate(self, didSelect: locationModel)
     }
 }
 
