@@ -258,6 +258,7 @@
 				24988B2B296DF24000A8320F /* CharacterDetail */,
 				2496F0AD298901F600A38AD9 /* Location */,
 				2496F0AE2989020600A38AD9 /* LocationDetails */,
+				24C8E2C629B8BB7200B9BB77 /* Episode */,
 				241926952978848700DA6575 /* EpisodeDetails */,
 				2496F0C02989450F00A38AD9 /* Search */,
 				246DF92E297C4ACC0014FFB0 /* Settings */,
@@ -469,9 +470,16 @@
 				24988B2C296DF29800A8320F /* RMCharacterPhotoCollectionViewCellViewModel.swift */,
 				24988B2E296DF2B000A8320F /* RMCharacterInfoCollectionViewCellViewModel.swift */,
 				24988B30296DF2C800A8320F /* RMCharacterEpisodeCollectionViewCellViewModel.swift */,
-				245506852973401F00318346 /* RMEpisodeListViewViewModel.swift */,
 			);
 			path = CharacterDetail;
+			sourceTree = "<group>";
+		};
+		24C8E2C629B8BB7200B9BB77 /* Episode */ = {
+			isa = PBXGroup;
+			children = (
+				245506852973401F00318346 /* RMEpisodeListViewViewModel.swift */,
+			);
+			path = Episode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

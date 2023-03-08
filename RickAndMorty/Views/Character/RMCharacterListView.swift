@@ -21,6 +21,7 @@ final class RMCharacterListView: UIView {
         spinner.translatesAutoresizingMaskIntoConstraints = false
         return spinner
     }()
+    
     private let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
