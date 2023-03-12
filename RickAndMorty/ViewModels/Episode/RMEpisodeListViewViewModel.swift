@@ -146,7 +146,7 @@ extension RMEpisodeListViewViewModel: UICollectionViewDataSource, UICollectionVi
     }
 }
 
-//MARK: - ScrollView
+//MARK: - UIScrollViewDelegate
 extension RMEpisodeListViewViewModel: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         guard shouldShowLoadMoreIndicator, !isLoadingMoreEpisodes, !cellViewModels.isEmpty, let nextUrlString = apiInfo?.next, let url = URL(string: nextUrlString) else { return }
