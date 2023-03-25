@@ -97,7 +97,7 @@ extension RMLocationView: UITableViewDelegate {
     }
 }
 
-//MARK: - UITableViewDelegate
+//MARK: - UITableViewDataSource
 extension RMLocationView: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel?.cellViewModels.count ?? 0
